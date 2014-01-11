@@ -1,0 +1,134 @@
+/* Add an external link marker [ Northeast Arrow: ↗ ] to anchors that open new windows via js. */
+a[rel~="external"][href] { border-bottom: 1px solid !important; text-decoration: none !important; }
+a[rel~="external"][href]:after { content: "\002197"; font-weight: bold; font-size: 0.7em; position: relative; top: -0.6em; right: -0.2em; }
+
+a { color: inherit; }
+
+body {
+    background-color: #171313;
+    color: #f7f7f7;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    text-align: center;
+}
+
+body > header, body > section, body > footer {
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    color: #171313;
+    margin: 16px 192px;
+    overflow: hidden;
+    padding: 8px 16px;
+    text-align: left;
+}
+body > footer {
+    background-color: #373333;
+    color: #171313;
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+}
+
+hr { border: 0px none transparent; border-top: 1px dotted rgba(0, 0, 0, 0.6); margin: 0px auto; width: 85%; }
+
+.right { float: right !important; }
+.hidden { display: none !important; }
+
+/* Customize our search form to emulate a Google-esque feel */
+form#google-search input[type="text"]#search {
+	background: #f7f7f7 url('../images/search.svg') 3px center no-repeat;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	height: 10px;
+	padding: 8px 4px 8px 26px;
+}
+form#google-search input[type="submit"] {
+	background: #4a8bf4 url('../images/icon-chrome_small.svg') -14px center no-repeat;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	color: #f7f7f7;
+	cursor: pointer;
+	font-weight: bold;
+	height: 28px;
+	padding: 4px 16px 4px 22px;
+}
+
+/* Messagebox stylings */
+.message { background-position: 8px center; background-repeat: no-repeat; border: 1px solid; border-radius: 2px; color: #171313; display: block; margin: 16px 12px; min-height: 16px; overflow: hidden; padding: 24px 8px 24px 64px; }
+.message.critical { background-color: #ffc0c0; background-image: url('../images/message-critical.png'); border-color: #ff8080; }
+.message.information { background-color: #c0ffc0; background-image: url('../images/message-information.png'); border-color: #80ff80; }
+.message.question { background-color: #c0c0ff; background-image: url('../images/message-question.png'); border-color: #8080ff; }
+.message.warning { background-color: #fff9c0; background-image: url('../images/message-warning.png'); border-color: #ffe980; }
+
+/* Menu bar styled navigation. Persistent, fixed bar; should fade while not in focus via js kerjiggery. */
+/* Targets the sibling after the navigation bar and adds to the top margin, prevents content from showing under the navbar on pageload. */
+menu#navigation + * {
+    margin-top: 60px;
+}
+menu#navigation {
+	background-color: #2d2a2a; /* fallback */
+	background-color: rgba(45, 42, 42, 0.95);
+	background: linear-gradient(to bottom, rgba(91, 88, 88, 0.95) 0%, rgba(70, 67, 67, 0.95) 50%, rgba(45, 42, 42, 0.95) 51%);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 0px 0px 3px 3px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	color: #999999;
+	display: block;
+    font-weight: bold;
+    height: 44px;
+	left: 0px;
+	list-style-type: none;
+	overflow: visible;
+	position: fixed;
+	text-align: left;
+	top: 0px;
+	width: 100%;
+	z-index: 999999;
+}
+menu#navigation > li {
+    float: left;
+    position: relative;
+}
+/* There's no place like ~/ */
+menu#navigation > li:first-child > a[href="/"] {
+	background-image: url('../images/home.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 28px;
+	width: 24px;
+}
+menu#navigation > li > *:first-child {
+	border: 0px none transparent;
+	border-left: 1px solid rgba(255, 255, 255, 0.15);
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1.3em;
+    overflow: hidden;
+	padding: 8px 4px;
+	height: 28px;
+}
+menu#navigation > li a {
+    color: inherit;
+	display: block;
+	padding: 8px 4px;
+    text-decoration: none;
+	white-space: nowrap;
+}
+menu#navigation > li > a:first-child { padding: 8px 16px; }
+menu#navigation > li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+	text-decoration: underline;
+}
+
+menu#navigation > li > ul {
+	background-color: #2d2a2a; /* fallback */
+	background-color: rgba(45, 42, 42, 0.95);
+	background: linear-gradient(to bottom, rgba(45, 42, 42, 0.95) 0%, rgba(45, 42, 42, 0.95) 100%);
+	border-radius: 0px 0px 2px 2px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	display: none;
+    font-weight: normal;
+	list-style-type: none;
+	position: absolute;
+	z-index: 99999;
+}
+menu#navigation > li:hover > ul { display: block; }
+menu#navigation > li > ul li > a { min-width: 160px; padding: 8px 16px; }
