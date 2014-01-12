@@ -21,7 +21,8 @@ body > header, body > section, body > footer {
     text-align: left;
 }
 body > footer {
-    background-color: #373333;
+	background-color: #2d2a2a; /* fallback */
+	background-color: rgba(45, 42, 42, 0.95);
     color: #171313;
     font-size: 0.7em;
     font-style: italic;
@@ -42,7 +43,7 @@ form#google-search input[type="text"]#search {
 	padding: 8px 4px 8px 26px;
 }
 form#google-search input[type="submit"] {
-	background: #4a8bf4 url('../images/icon-chrome_small.svg') -14px center no-repeat;
+	background: #4a8bf4 url('../images/icon-chrome_handcoded.svg') -14px center no-repeat;
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	border-radius: 3px;
 	color: #f7f7f7;
@@ -50,6 +51,9 @@ form#google-search input[type="submit"] {
 	font-weight: bold;
 	height: 28px;
 	padding: 4px 16px 4px 22px;
+}
+form#google-search input[type="submit"]:hover {
+	background: #4a8bf4 url('../images/icon-chrome_handcoded-animated.svg') -14px center no-repeat;
 }
 
 /* Messagebox stylings */
