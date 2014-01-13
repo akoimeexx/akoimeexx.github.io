@@ -6,3 +6,4 @@ kramdown:
   input: GFM
 safe: true
 timezone: America/Detroit
+url: http://akoimeexx.github.io/

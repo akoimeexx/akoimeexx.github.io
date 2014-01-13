@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>akoimeexx.github.io &sdot; {{ page.title }}</title>
-		<link rel="shortcut icon" href="{{ site.url }}/media/images/favicon.svg">
-		<link href="{{ site.url }}/media/css/reset.css" rel="StyleSheet" type="text/css" />
-		<link href="{{ site.url }}/media/css/stylesheet.css" rel="StyleSheet" type="text/css" />
+		<link rel="shortcut icon" href="{{ site.url }}media/images/favicon.svg">
+		<link href="{{ site.url }}media/css/reset.css" rel="StyleSheet" type="text/css" />
+		<link href="{{ site.url }}media/css/stylesheet.css" rel="StyleSheet" type="text/css" />
         
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script type="text/javascript">
             google.load("jquery", "1");
             
         </script>
-        <script type="text/javascript" src="{{ site.url }}/media/js/site.js"></script>
+        <script type="text/javascript" src="{{ site.url }}media/js/site.js"></script>
         
         <!--
             Link to page with RSS feed (http://vagabondhacker.wordpress.com/) 
@@ -23,15 +23,15 @@
 	</head>
 	<body>
 		<menu type="toolbar" id="navigation">
-			<li><a href="{{ site.url }}/" title="Home"></a></li>
-            <li><a href="{{ site.url }}/journal/">Journal</a>
+			<li><a href="{{ site.url }}" title="Home"></a></li>
+            <li><a href="{{ site.url }}journal/">Journal</a>
                 <ul>
 {% for post in site.posts limit:5 %}
-                    <li><span>{{ post.date | date: "%B %e, %Y" }}</span><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a></li>
+                    <li><span>{{ post.date | date: "%B %e, %Y" }}</span><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
                 </ul>
             </li>
-			<li><a href="{{ site.url }}/projects/">Projects</a>
+			<li><a href="{{ site.url }}projects/">Projects</a>
 				<ul>
                     <li><a href="https://github.com/akoimeexx/JSON-RPC-Client" rel="external">JSON-RPC Client Class Module</a></li>
 					<!--
@@ -44,7 +44,7 @@
 			<li class="right">
                 <form id="google-search" action="http://www.google.com/search" method="get" target="_blank">
                     <input type="text" name="q" id="search" placeholder="Type your search term&hellip;" required />
-                    <input type="hidden" name="q" value="site:http://akoimeexx.github.io/" />
+                    <input type="hidden" name="q" value="site:{{ site.url }}" />
                     <input type="submit" title="Google Search" value="Search &raquo;" />
                 </form>
             </li>
