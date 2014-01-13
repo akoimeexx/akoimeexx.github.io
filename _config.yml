@@ -1,4 +1,6 @@
 encoding: utf-8
+paginate: 10
+paginate_path: "/journal/page-:num"
 permalink: /journal/:title
 kramdown:
   input: GFM
