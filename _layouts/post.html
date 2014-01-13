@@ -1,4 +1,4 @@
 {% include header.html %}
-<h2>published on {{ page.date }}</h2>
+<h2>published on {{ post.date | date: "%B %e, %Y" }}</h2>
 {{ content }}
 {% include footer.html %}
