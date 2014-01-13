@@ -1,3 +1,6 @@
 encoding: utf-8
+permalink: /journal/:title
+kramdown:
+  input: GFM
 safe: true
 timezone: America/Detroit

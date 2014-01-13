@@ -1,5 +1,6 @@
 /* Add an external link marker [ Northeast Arrow: ↗ ] to anchors that open new windows via js. */
-a[rel~="external"][href] { border-bottom: 1px solid !important; text-decoration: none !important; }
+a[rel~="external"][href] { text-decoration: none !important; }
+a[rel~="external"][href]:hover { border-bottom: 1px solid !important; }
 a[rel~="external"][href]:after { content: "\002197"; font-weight: bold; font-size: 0.7em; position: relative; top: -0.6em; right: -0.2em; }
 
 a { color: inherit; }
@@ -15,7 +16,7 @@ body > header, body > section, body > footer {
     background-color: #f7f7f7;
     border-radius: 3px;
     color: #171313;
-    margin: 16px 192px;
+    margin: 16px 5%;
     overflow: hidden;
     padding: 8px 16px;
     text-align: left;
@@ -29,7 +30,8 @@ body > footer {
     text-align: center;
 }
 
-hr { border: 0px none transparent; border-top: 1px dotted rgba(0, 0, 0, 0.6); margin: 0px auto; width: 85%; }
+h1, hr { border: 0px none transparent; border-bottom: 1px dotted rgba(0, 0, 0, 0.6); }
+hr { margin: 0px auto; width: 85%; }
 
 .right { float: right !important; }
 .hidden { display: none !important; }
@@ -131,6 +133,8 @@ menu#navigation > li > ul {
 	display: none;
     font-weight: normal;
 	list-style-type: none;
+    max-height: 640px;
+    overflow: auto;
 	position: absolute;
 	z-index: 99999;
 }
