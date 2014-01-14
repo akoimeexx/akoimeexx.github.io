@@ -94,8 +94,14 @@ menu#navigation > li {
     float: left;
     position: relative;
 }
+menu#navigation .post-date {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 0.8em;
+	padding: 4px 2px;
+}
+
 /* There's no place like ~/ */
-menu#navigation > li:first-child > a[href="/"] {
+menu#navigation > li:first-child > a[title="Home"] {
 	background-image: url('../images/home.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
