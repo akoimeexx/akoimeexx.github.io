@@ -95,9 +95,8 @@ menu#navigation > li {
     position: relative;
 }
 menu#navigation .post-date {
-	color: rgba(0, 0, 0, 0.5);
-	font-size: 0.8em;
-	padding: 4px 2px;
+	font-size: 0.9em;
+	padding: 8px 2px 4px;
 }
 
 /* There's no place like ~/ */
