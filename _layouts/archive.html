@@ -1,16 +1,12 @@
 {% include header.html %}
-<header><h1>{{ page.title }}</h1></header>
-{{ content }}
-<p>
-	<ul class="archive">
-        <li><h3>Table of Contents</h3></li>
-{% for post in site.posts %}
-		<li class="post">
-			<strong><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></strong>
-			<span class="timestamp-{{ post.date | date: '%Y%m%d' }}">{{ post.date | date: "%B %e, %Y" }}</span>
-            {{ post.excerpt }}
-		</li>
-{% endfor %}
-	</ul>
-</p>
+            <header><h1>{{ page.title }}</h1></header>
+            {{ content }}
+            <ul class="archive">
+                <li><h3>Table of Contents</h3></li>{% for post in paginator.posts %}
+                <li class="post">
+                    <strong><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a></strong>
+                    <span class="timestamp-{{ post.date | date: '%Y%m%d' }}">{{ post.date | date: "%B %e, %Y" }}</span>
+                    {{ post.excerpt }}
+                </li>{% endfor %}
+            </ul>{% include pagination.html %}
 {% include footer.html %}

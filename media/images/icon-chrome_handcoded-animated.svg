@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <svg width="28" height="28" xmlns="http://www.w3.org/2000/svg">
-    <title>Hand-written Animated Chrome Icon</title>
+    <title>Hand-written Animated Chrome Icon, by Johnathan McKnight</title>
     <g id="icon" cy="14" cx="14">
         <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 14 14" to="0 14 14" dur="4s" additive="replace" repeatCount="indefinite" />
-        <ellipse id="circBase" ry="14" rx="14" cy="14" cx="14" fill="#ffffff" stroke-width="0" />
-        <path id="pathYellowArc" fill="#ffe040" stroke-width="0" 
+        <ellipse id="circBase" ry="14" rx="14" cy="14" cx="14" fill="#ffffff" />
+        <path id="pathYellowArc" fill="#ffe040" 
             d="M 14 7 L 14 14 L 20.0625 17.5 L 14 28 C 18.833304 27.994958 23.534523 25.486837 26.125 21 C 27.333123 18.90747 27.941388 16.631747 28 14.375 C 28.067188 11.788062 27.416963 9.2378972 26.125 7 L 14 7 z " />
-        <path id="pathGreenArc" fill="#80e080" stroke-width="0" 
+        <path id="pathGreenArc" fill="#80e080" 
             d="M 1.875 7 C -1.9909932 13.696097 0.3039033 22.259007 7 26.125 C 9.2092595 27.400517 11.620145 28.002483 14 28 L 20.0625 17.5 L 14 14 L 7.9375 17.5 L 1.875 7 z " />
-        <path id="pathRedArc" fill="#e04030" stroke-width="0" 
+        <path id="pathRedArc" fill="#e04030" 
             d="M 13.375 0 C 11.018285 0.10963231 8.7088484 0.82441054 6.6875 2.0625 C 4.7624062 3.2416328 3.0831229 4.9074698 1.875 7 L 7.9375 17.5 L 14 14 L 14 7 L 26.125 7 C 26.064492 6.8951892 26.000804 6.7908525 25.9375 6.6875 C 24.758367 4.7624062 23.09253 3.0831229 21 1.875 C 18.90747 0.66687711 16.631747 0.058612096 14.375 0 C 14.036488 -0.0087918144 13.711674 -0.015661758 13.375 0 z " />
-        <ellipse id="circIris" ry="7" rx="7" cy="14" cx="14" fill="#ffffff" stroke-width="0" />
-        <ellipse id="circCenter" ry="5" rx="5" cy="14" cx="14" fill="#20b0e0" stroke-width="0" />
+        <ellipse id="circIris" ry="7" rx="7" cy="14" cx="14" fill="#ffffff" />
+        <ellipse id="circCenter" ry="5" rx="5" cy="14" cx="14" fill="#20b0e0" />
     </g>
 </svg>

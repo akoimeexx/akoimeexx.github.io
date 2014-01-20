@@ -147,10 +147,17 @@ menu#navigation > li > ul {
 menu#navigation > li:hover > ul { display: block; }
 menu#navigation > li > ul li > a { min-width: 160px; padding: 8px 16px; }
 
+section.content aside {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8em;
+    font-style: italic;
+}
 
-ul.archive { list-style-type: none; }
-ul.archive a { text-decoration: none; }
-ul.archive a:hover { text-decoration: underline; }
+
+
+ul.archive, ul.paginator { list-style-type: none; }
+ul.archive a, ul.paginator a { text-decoration: none; }
+ul.archive a:hover, ul.paginator a:hover { text-decoration: underline; }
 ul.archive > li h3 { text-align: center; }
 ul.archive > li.post {
     border: 0px none transparent;
@@ -161,6 +168,22 @@ ul.archive > li.post {
     text-align: left;
     width: 50%;
 }
+ul.paginator {
+    font-size:1.2em;
+    font-weight: bold;
+    margin: 16px 25%;
+    overflow: auto;
+    text-align: center;
+}
+ul.paginator > li {
+    display: inline-block;
+}
+ul.paginator > li:first-child {
+    font-size: 1.4em;
+}
+ul.paginator > li:last-child {
+    font-size: 1.4em;
+}
 span[class|="timestamp"], ul.archive > li.post p {
     color: rgba(0, 0, 0, 0.6);
     float: right;
@@ -170,13 +193,6 @@ span[class|="timestamp"], ul.archive > li.post p {
 ul.archive > li.post p:after {
     content: "\002026"; /* &hellip; */
 }
-
-aside {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 0.8em;
-    font-style: italic;
-}
-
 
 .highlight, p > pre, p > code, p > nobr > code, li > code, h5 > code, 
 .note > code {
