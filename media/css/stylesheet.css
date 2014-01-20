@@ -175,15 +175,9 @@ ul.paginator {
     overflow: auto;
     text-align: center;
 }
-ul.paginator > li {
-    display: inline-block;
-}
-ul.paginator > li:first-child {
-    font-size: 1.4em;
-}
-ul.paginator > li:last-child {
-    font-size: 1.4em;
-}
+ul.paginator > li { display: inline-block; }
+ul.paginator > li:first-child, ul.paginator > li:last-child { font-size: 1.4em; }
+
 span[class|="timestamp"], ul.archive > li.post p {
     color: rgba(0, 0, 0, 0.6);
     float: right;
