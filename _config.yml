@@ -7,4 +7,4 @@ paginate_path: "/journal/page-:num"
 permalink: /journal/:title
 safe: true
 timezone: America/Detroit
-url: http://akoimeexx.github.io/
+url: http://akoimeexx.github.io
