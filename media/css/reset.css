@@ -12,9 +12,9 @@
  * is needed. It is done here solely for posterity.
  */
 
-html, body, div, form, header, footer, section, article, aside, img, h1, h2, h3,
-h4, h5, h6, li, menu, nav, ul, ol, dl, dd, dt, form, table, tbody, thead, tfoot, 
-th, td, tr, blockquote {
+html, body, div, form, header, footer, section, article, aside, img, li, 
+menu, nav, ul, ol, dl, dd, dt, form, table, tbody, thead, tfoot, th, td, 
+tr, blockquote {
 	margin: 0px;
 	padding: 0px;
 	border: 0px none transparent;

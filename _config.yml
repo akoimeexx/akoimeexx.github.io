@@ -1,9 +1,10 @@
 encoding: utf-8
+exclude: [README.md, template.html, LICENSE]
+kramdown:
+  input: GFM
 paginate: 10
 paginate_path: "/journal/page-:num"
 permalink: /journal/:title
-kramdown:
-  input: GFM
 safe: true
 timezone: America/Detroit
 url: http://akoimeexx.github.io/
