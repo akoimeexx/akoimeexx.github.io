@@ -31,10 +31,10 @@
                 </ul>
             </li>
             <li><a href="{{ site.url }}/projects/">Projects</a>
-                <ul>{% for category in site.data.categories %}
+                <ul>{% for category in site.data.categories %}{% if category.publish == true %}
                     <li class="category-{{ category.slug }}"><strong>{{ category.title }}</strong></li>{% for project in site.data.projects %}{% if project.category == category.slug and project.publish == true %}
                     <li><a href="{{ site.url }}/projects/{{ project.slug }}/">{{ project.title }}</a></li>{% endif %}{% endfor %}
-                    <li><hr /></li>{% endfor %}
+                    <li><hr /></li>{% endif %}{% endfor %}
                 </ul>
             </li>
             <li class="right">

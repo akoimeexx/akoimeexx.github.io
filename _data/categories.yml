@@ -1,14 +1,18 @@
 ---
 - slug: android
   title: Android
+  publish: false
 
 - slug: embedded
   title: Embedded
+  publish: true
 
 - slug: web
   title: Web
+  publish: true
 
 - slug: other
   title: Other
+  publish: true
 
 ---
