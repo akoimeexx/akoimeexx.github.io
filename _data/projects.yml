@@ -1,0 +1,110 @@
+---
+- title: Cerberus Webserver
+  slug: muhttpd
+  category: android
+  publish: false
+  description: 
+
+- title: Zombie Sharks!
+  slug: zombie-sharks
+  category: android
+  publish: false
+  description: 
+
+- title: Atmel Attiny85 Code
+  slug: attiny85-snippits
+  category: embedded
+  publish: false
+  description: 
+
+- title: "&ldquo;ARC&rdquo; &sdot; Automated Robotic Carrier"
+  slug: arc
+  category: embedded
+  publish: true
+  description: 
+
+- title: Electric Motorcycle Build
+  slug: e-cycle
+  category: embedded
+  publish: true
+  description: Motor controller wired up, figure out a way to mount motor into frame and connect sprocket to output shaft.
+
+- title: Electronic Acrylic Mask
+  slug: electric-mask
+  category: embedded
+  publish: false
+  description: 
+
+- title: Guitar Amplifier
+  slug: amp
+  category: embedded
+  publish: false
+  description: 
+
+- title: IBM Model M Terminal Keyboard rebuild
+  slug: keyboard
+  category: embedded
+  publish: true
+  description: 
+
+- title: NDS Save Manager
+  slug: save-manager
+  category: embedded
+  publish: false
+  description: 
+
+- title: "uNet &sdot; OpenWRT TP-Link ROuter Network"
+  slug: unet
+  category: embedded
+  publish: true
+  description: Super geek network. two DDWRT-flashed routers, NAS, & Mac Mini, Uninterruptible Power Supply.
+
+- title: Wizard's Staves
+  slug: staves
+  category: embedded
+  publish: false
+  description: Twisted roots with rgb led, carved shaft; Walking Sticks.
+
+- title: Animal Crossing Pattern Editor
+  slug: ac-pattern-editor
+  category: web
+  publish: true
+  description: 
+
+- title: "EuphorumBB &sdot; PHP Forum framework"
+  slug: euphorumbb
+  category: web
+  publish: true
+  description: 
+
+- title: PHP Class Modules
+  slug: php-modules
+  category: web
+  publish: false
+  description: 
+
+- title: Pokemon XML Renderer
+  slug: pkmn-render
+  category: web
+  publish: true
+  description: 
+
+- title: Chainmaille-Leather Bracers
+  slug: bracers
+  category: other
+  publish: false
+  description: 
+
+- title: "&ldquo;Black Betty&rdquo; &sdot; Electric Guitar"
+  slug: guitar
+  category: other
+  publish: true
+  description: 
+
+- title: Dot.Files
+  slug: dotfiles
+  category: other
+  publish: false
+  description: .bashrc config file for streamlined sysadmin'ing
+
+---

@@ -31,34 +31,10 @@
                 </ul>
             </li>
             <li><a href="{{ site.url }}/projects/">Projects</a>
-                <ul>
-                    <!--
-                    <li><strong>Android Development:</strong></li>
-                    <li><a href="{{ site.url }}/projects/"><strike>Cerberus Webserver</strike></a></li>
-                    <li><a href="{{ site.url }}/projects/"><strike>Zombie Sharks!</strike></a></li>
-                    <li><hr /></li>
-                    -->
-                    <li><strong>Embedded:</strong></li>
-                    <!--<li><a href="https://gist.github.com/akoimeexx/2216018" rel="external">Atmel Attiny85 Code</a></li>-->
-                    <li><a href="{{ site.url }}/projects/arc/">&ldquo;ARC&rdquo; &sdot; Automated Robotic Carrier</a></li>
-                    <li><a href="{{ site.url }}/projects/e-cycle/">Electric Motorcycle rebuild</a></li><!-- Motor controller wired up, figure out a way to mount motor into frame and connect sprocket to output shaft. -->
-                    <!--<li><a href="{{ site.url }}/projects/electric-mask/"><strike>Electronic Acrylic Mask</strike></a></li>-->
-                    <!--<li><a href="{{ site.url }}/projects/amp/"><strike>Guitar Amplifier</strike></a></li>-->
-                    <li><a href="{{ site.url }}/projects/keyboard/">IBM Model M Terminal Keyboard rebuild</a></li>
-                    <!--<li><a href="{{ site.url }}/projects/save-manager/"><strike>NDS Save Manager</strike></a></li>-->
-                    <li><a href="{{ site.url }}/projects/unet/">uNet &sdot; OpenWRT TP-Link Router Network</a></li><!-- Super geek network. two DDWRT-flashed routers, NAS, & Mac Mini, Uninterruptible Power Supply -->
-                    <!--<li><a href="{{ site.url }}/projects//staves/">Wizard's Staves</a></li>--><!-- twisted roots with rgb led, carved shaft; Walking Sticks -->
-                    <li><hr /></li>
-                    <li><strong>Web:</strong></li>
-                    <li><a href="{{ site.url }}/projects/ac-pattern/">AC Pattern Editor</a></li>
-                    <li><a href="{{ site.url }}/projects/euphorumbb/">EuphorumBB &sdot; PHP Forum framework</a></li>
-                    <!--<li><a href="{{ site.url }}/projects/"><strike>PHP Class Modules</strike></a></li>-->
-                    <li><a href="{{ site.url }}/projects/pkmn/">Pokemon XML Renderer</a></li>
-                    <li><hr /></li>
-                    <li><strong>Other:</strong></li>
-                    <!--<li><a href="{{ site.url }}/projects/">Chainmaille-Leather Bracers</a></li>-->
-                    <li><a href="{{ site.url }}/projects/guitar/">Custom Electric Guitar</a></li>
-                    <!--<li><a href="{{ site.url }}/projects/">Oper.bashrc</a></li>--><!-- .bashrc config file for streamlined sysadmin'ing -->
+                <ul>{% for category in site.data.categories %}
+                    <li class="category-{{ category.slug }}"><strong>{{ category.title }}</strong></li>{% for project in site.data.projects %}{% if project.category == category.slug and project.publish == true %}
+                    <li><a href="{{ site.url }}/projects/{{ project.slug }}/">{{ project.title }}</a></li>{% endif %}{% endfor %}
+                    <li><hr /></li>{% endfor %}
                 </ul>
             </li>
             <li class="right">
