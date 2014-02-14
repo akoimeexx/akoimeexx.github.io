@@ -37,12 +37,9 @@
                     <li><hr /></li>{% endif %}{% endfor %}
                 </ul>
             </li>
-            <li class="right">
-                <form class="google-search" id="cse-search-box" action="https://www.google.com/cse/publicurl" method="get" target="_blank">
-                    <input type="hidden" name="cx" value="000616373977145830974:hfjmfzh8xtk" />
-                    <input type="text" name="q" id="search" placeholder="Type your search term&hellip;" required />
-                    <!--<input type="hidden" name="q" value="site:{{ site.url }}/" />-->
-                    <input type="submit" title="Google Search" value="Search &raquo;" />
+            <li class="right" style="background: linear-gradient(to bottom, #4a8bf4 0%, #2a6bd4 50%, #1a5bc4 51%);">
+                <form id="search">
+                    <input type="text" name="q" id="q" placeholder="Type your search term&hellip;" required />
                 </form>
             </li>
         </menu>

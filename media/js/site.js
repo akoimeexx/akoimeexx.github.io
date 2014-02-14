@@ -2,6 +2,7 @@
  * Site-wide js implementation
  *    jQuery libraries must be loaded before this script.
  */
+
 $(document).ready(function(){
 	// Make external links open in a new window
 	$('a[rel*=external]').click(function(){
@@ -33,4 +34,33 @@ $(document).ready(function(){
             });
         }
     );
+    
+    // Creates 1:1 modal displays for constrained images, click-to-close
+    $("img[height], img[width]").css({
+		"cursor": "pointer", 
+	}).prop('title', 'Click to enlarge').click(function(){
+		var modal = $('<div />', {
+			'css': {
+				'backgroundColor': 'rgba(0, 0, 0, 0.95)',
+				'backgroundImage': 'url(' + $(this).prop('src') + ')', 
+				'backgroundPosition': 'center', 
+				'backgroundRepeat': 'no-repeat', 
+				'color': 'rgba(255, 255, 255, 0.45)', 
+				'fontSize': '2.0em', 
+				'fontWeight': 'bold', 
+				'height': $(window).height(), 
+				'left': '0px', 
+				'position': 'fixed', 
+				'textShadow': '2px 1px rgba(0, 0, 0, 0.95), -2px -1px rgba(0, 0, 0, 0.95)', 
+				'top': '0px', 
+				'width': $(window).width(), 
+				'zIndex': 9999999, 
+			}, 
+			'click': function() { $(this).remove(); }, 
+		}).prop('title', 'Click anywhere to close').html(
+			'Click anywhere to close'
+		);
+		$('body').prepend(modal);
+	});
+
 });

@@ -53,7 +53,7 @@
   publish: false
   description: 
 
-- title: "uNet &sdot; OpenWRT TP-Link ROuter Network"
+- title: "&mu;Net &sdot; OpenWRT TP-Link Router Network"
   slug: unet
   category: embedded
   publish: true
@@ -66,7 +66,7 @@
   description: Twisted roots with rgb led, carved shaft; Walking Sticks.
 
 - title: Animal Crossing Pattern Editor
-  slug: ac-pattern-editor
+  slug: ac-pattern
   category: web
   publish: true
   description: 
@@ -84,7 +84,7 @@
   description: 
 
 - title: Pokemon XML Renderer
-  slug: pkmn-render
+  slug: pkmn
   category: web
   publish: true
   description: 
