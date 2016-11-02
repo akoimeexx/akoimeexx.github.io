@@ -9,7 +9,7 @@ kramdown:
   input: GFM
 paginate: 10
 paginate_path: "/journal/page-:num"
-permalink: /journal/:title
+permalink: /journal/:title/
 safe: true
 timezone: America/Detroit
 twitter: akoimeexx
