@@ -27,7 +27,7 @@
             <li><a href="{{ site.url }}/" title="Home"></a></li>
             <li><a href="{{ site.url }}/journal/">Journal</a>
                 <ul>{% for post in site.posts limit:5 %}
-                    <li><span class="post-date">{{ post.date | date: "%B %e, %Y" }}</span><a href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a></li>{% endfor %}
+                    <li><span class="post-date">{{ post.date | date: "%B %e, %Y" }}</span><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                 </ul>
             </li>
             <li><a href="{{ site.url }}/projects/">Projects</a>
