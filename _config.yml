@@ -3,13 +3,13 @@ encoding: utf-8
 exclude: [README.md, template.html, LICENSE, .gitignore]
 github: akoimeexx
 gravatar_url: //s.gravatar.com/avatar/42c385b8a321b1cd97c10544fb4b1914?s=160
+hilighter: rouge
 images: /media/images/
 kramdown:
   input: GFM
 paginate: 10
 paginate_path: "/journal/page-:num"
 permalink: /journal/:title
-pygments: true
 safe: true
 timezone: America/Detroit
 twitter: akoimeexx
